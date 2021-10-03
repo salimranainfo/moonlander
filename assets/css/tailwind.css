@@ -1,0 +1,30 @@
+/* ./assets/css/tailwind.css */
+
+/* @import url('./fonts.css'); */
+@tailwind base;
+
+/* body {
+  font-family: 'Lato', sans-serif;
+} */
+
+input,
+button,
+textarea,
+a {
+  @apply focus:outline-none;
+}
+
+.custom-transition {
+  @apply transition duration-200 ease-in-out;
+}
+
+.section-headline {
+  @apply text-2xl font-bold md:text-3xl;
+}
+
+.section-para {
+  @apply text-sm leading-tight;
+}
+
+@tailwind components;
+@tailwind utilities;
