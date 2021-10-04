@@ -1,19 +1,15 @@
 <template>
-  <div class="pt-16">
+  <div class="pt-16 lg:pt-20">
     <hero></hero>
-    <roadmap></roadmap>
-    <team></team>
-    <video-guide></video-guide>
+    <features></features>
   </div>
 </template>
 
 <script>
+import Features from '~/components/homepage/Features.vue'
 import Hero from '~/components/homepage/Hero.vue'
-import Roadmap from '~/components/homepage/Roadmap.vue'
-import Team from '~/components/homepage/Team.vue'
-import VideoGuide from '~/components/homepage/VideoGuide.vue'
 
 export default {
-  components: { Hero, Roadmap, Team, VideoGuide },
+  components: { Hero, Features },
 }
 </script>

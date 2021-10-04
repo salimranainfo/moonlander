@@ -1,43 +1,30 @@
 <template>
   <section>
-    <!-- Text Content -->
-    <div class="lg:max-w-[50rem] xl:max-w-[55rem] mx-auto">
-      <div class="px-4 pb-12 pt-6 md:px-20 md:pt-16">
-        <div class="pt-4 md:w-8/12 md:pr-10">
-          <h2 class="section-headline">Moonlender Lorem ipsum</h2>
-          <p class="section-para text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi et aliquam ipsa! Ad non minus ipsam</p>
+    <div class="lg:max-w-[55rem] xl:max-w-[66rem] mx-auto px-4">
+      <div class="space-y-6 md:space-y-0 md:flex justify-center items-center pt-12 md:space-x-6 xl:pt-16 2xl:pt-20">
+        <div class="md:w-3/12 h-32 bg-gray-600 flex justify-center items-center">
+          <p>image here</p>
         </div>
 
-        <!-- buttons -->
-        <div class="mt-2">
-          <div class="space-x-2 mb-1">
-            <button class="bg-blue-400 py-1 px-4 rounded-2xl text-white font-semibold">Buy MLD</button>
-            <button class="bg-pink-600 py-1 px-4 rounded-2xl text-white font-semibold">Lorem</button>
-          </div>
-          <button class="bg-blue-400 py-1 px-4 rounded-2xl text-white font-semibold">Buy MLD</button>
+        <div class="md:w-9/12">
+          <h2 class="section-headline">Moonlender Lorem</h2>
+          <p class="section-para text-justify md:mt-2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad</p>
+        </div>
+      </div>
+
+      <!-- box -->
+      <div class="mt-16 lg:mt-[5.32rem] rounded-[.625rem] md:flex justify-between items-center md:space-x-6 relative" style="background: linear-gradient(90deg, rgba(1, 119, 184, 1) 0%, rgba(48, 152, 201, 1) 100%)">
+        <div class="md:w-4/12 m-2 h-28 bg-gray-600 flex justify-center items-center">
+          <p>image here</p>
         </div>
 
-        <!-- Spotlight Feature -->
-        <div class="bg-blue-400 rounded-2xl px-4 py-10 mt-2 md:px-8">
-          <p class="text-white font-semibold text-lg text-justify md:text-xl lg:text-2xl">spotlight feature lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi et aliquam ipsa! Ad non minus ipsam Excepturi et aliquam ipsa! Ad non minus ipsam</p>
+        <div class="md:w-8/12">
+          <p class="text-lg leading-tight text-justify md:text-2xl md:leading-tight lg:text-3xl lg:leading-tight px-4 py-6 md:px-8 md:py-10 xl:px-12 xl:py-16">Invest in promising projects like real estate or tech with our automated secure crowdlending DAO and get a high yield.</p>
         </div>
 
-        <!-- Feature -->
-        <div class="mt-8 space-y-4 md:space-y-0 md:flex justify-start items-stretch md:space-x-8">
-          <div class="px-8 bg-gray-200 rounded-2xl py-6 lg:px-12 md:w-7/12 lg:py-10">
-            <h3 class="text-xl font-bold text-gray-700 lg:text-2xl">Feature 1</h3>
-            <p class="text-xs mt-1 text-gray-700 lg:text-sm lg:leading-tight lg:mt-3">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque dicta vero dolorum hic neque, est odit. Qui dolor perferendis sunt dolorem dignissimos corporis aliquid saepe, iure non iusto? Corporis, eligendi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque dicta vero
-              dolorum hic neque, est odit. Qui dolor perferendis sunt dolorem dignissimos corporis aliquid saepe, iure non iusto? Corporis, eligendi.
-            </p>
-          </div>
-
-          <div class="px-8 bg-gray-200 rounded-2xl py-6 md:w-5/12">
-            <h3 class="text-xl font-bold text-gray-700">Feature 2</h3>
-            <p class="text-xs mt-1 text-gray-700 lg:text-sm lg:leading-tight lg:mt-3">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque dicta vero dolorum hic neque, est odit. Qui dolor perferendis sunt dolorem dignissimos corporis aliquid saepe, iure non iusto? Corporis, eligendi. Lorem ipsum dolor,
-            </p>
-          </div>
+        <!-- Corner Image -->
+        <div class="absolute bottom-0 right-0 bg-white h-16 w-16 rounded-full flex justify-center items-center transform translate-y-[70%] translate-x-[20%] lg:translate-y-[50%] lg:translate-x-[30%]">
+          <p class="text-black text-xs text-center">Image Here</p>
         </div>
       </div>
     </div>
