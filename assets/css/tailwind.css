@@ -33,7 +33,7 @@ a {
 }
 
 .section-para {
-  @apply text-sm lg:text-base xl:text-xl xl:leading-tight;
+  @apply text-sm lg:text-base xl:text-xl xl:leading-tight text-[#e6e7ea];
 }
 
 @tailwind components;
