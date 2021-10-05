@@ -36,5 +36,10 @@ a {
   @apply text-sm lg:text-base xl:text-xl xl:leading-tight text-[#e6e7ea];
 }
 
+.section-width {
+  /* @apply lg:max-w-[55rem] xl:max-w-[66rem] mx-auto px-4 mt-32 md:mt-44 xl:mt-[12.5rem]; */
+  @apply lg:max-w-[55rem] xl:max-w-[66rem] mx-auto px-4 mt-20 md:mt-24 xl:mt-[7rem];
+}
+
 @tailwind components;
 @tailwind utilities;

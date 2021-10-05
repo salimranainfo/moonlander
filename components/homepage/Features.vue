@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="lg:max-w-[55rem] xl:max-w-[66rem] mx-auto px-4 mt-32 md:mt-44 xl:mt-[12.5rem]">
+    <div class="section-width">
       <h2 class="section-headline">Moonlender Features</h2>
 
       <!-- features -->

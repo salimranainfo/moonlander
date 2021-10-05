@@ -1,22 +1,57 @@
 <template>
-  <footer>
-    <div class="lg:max-w-[50rem] xl:max-w-[55rem] mx-auto">
-      <div class="px-4 space-y-4 md:space-y-0 md:flex justify-around items-start pt-12 pb-20">
-        <div v-for="(item, i) in items" :key="i">
-          <h4 class="text-lg font-bold">{{ item.title }}</h4>
-          <div class="flex flex-col space-y-1 mt-2">
-            <nuxt-link v-for="(footerItem, z) in item.footerItems" :key="z" :to="footerItem.link" class="text-sm">{{ footerItem.title }}</nuxt-link>
+  <footer class="bg-[#0f1642]">
+    <div class="lg:max-w-[55rem] xl:max-w-[66rem] mx-auto">
+      <div class="px-4 pt-12 pb-10">
+        <div class="space-y-6 md:space-y-0 md:grid grid-cols-4 gap-x-6">
+          <!-- Moonlender -->
+          <div>
+            <h4 class="text-lg font-bold">Moonlender</h4>
+            <p class="text-sm leading-tight mt-2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi</p>
+          </div>
+
+          <!-- Pages and Docs -->
+          <div v-for="(item, i) in items" :key="i">
+            <h4 class="text-lg font-bold">{{ item.title }}</h4>
+            <div class="flex flex-col space-y-1 mt-2">
+              <nuxt-link v-for="(footerItem, z) in item.footerItems" :key="z" :to="footerItem.link" class="text-sm">{{ footerItem.title }}</nuxt-link>
+            </div>
+          </div>
+
+          <!-- Contact and investors -->
+          <div class="flex flex-col justify-between">
+            <div>
+              <h4 class="text-lg font-bold">Contact</h4>
+              <div class="flex flex-col space-y-1 mt-2">
+                <nuxt-link to="" class="text-sm">Footer item</nuxt-link>
+              </div>
+            </div>
+
+            <div>
+              <h4 class="text-lg font-bold">investors</h4>
+              <div class="flex flex-col space-y-1 mt-2">
+                <nuxt-link to="" class="text-sm">Footer item</nuxt-link>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div>
-          <h4 class="text-lg font-bold">Join us</h4>
-          <div class="flex flex-col space-y-1 mt-2">
-            <a v-for="(item, i) in socialMediaItems" :key="i" :href="item.link" class="flex justify-start items-center space-x-2 text-sm">
-              <span class="h-4 w-4 rounded-full bg-gray-500">
-                <img :src="item.icon" alt="" />
-              </span>
-              <span>{{ item.title }}</span>
+        <!-- copyright & social media icons -->
+        <div class="mt-20 md:mt-12 md:flex justify-between items-center">
+          <p class="opacity-50">&copy; 2021 Moonlender. All rights reserved</p>
+
+          <!-- social media links -->
+          <div class="flex justify-start items-center space-x-2 mt-2 md:mt-0">
+            <a href="">
+              <img src="~/assets/images/social-media/reddit.png" alt="" />
+            </a>
+            <a href="">
+              <img src="~/assets/images/social-media/telegram.png" alt="" />
+            </a>
+            <a href="">
+              <img src="~/assets/images/social-media/twitter.png" alt="" />
+            </a>
+            <a href="">
+              <img src="~/assets/images/social-media/youtube.png" alt="" />
             </a>
           </div>
         </div>
@@ -31,28 +66,7 @@ export default {
     return {
       items: [
         {
-          title: 'Footer title',
-          footerItems: [
-            {
-              title: 'Footer Item',
-              link: '',
-            },
-            {
-              title: 'Footer Item',
-              link: '',
-            },
-            {
-              title: 'Footer Item',
-              link: '',
-            },
-            {
-              title: 'Footer Item',
-              link: '',
-            },
-          ],
-        },
-        {
-          title: 'Footer title',
+          title: 'Pages',
           footerItems: [
             {
               title: 'Footer Item',
@@ -76,28 +90,30 @@ export default {
             },
           ],
         },
-      ],
-
-      socialMediaItems: [
         {
-          title: 'Telegram',
-          icon: '',
-          link: '',
-        },
-        {
-          title: 'Reddit',
-          icon: '',
-          link: '',
-        },
-        {
-          title: 'Twitter',
-          icon: '',
-          link: '',
-        },
-        {
-          title: 'Youtube',
-          icon: '',
-          link: '',
+          title: 'Docs',
+          footerItems: [
+            {
+              title: 'Footer Item',
+              link: '',
+            },
+            {
+              title: 'Footer Item',
+              link: '',
+            },
+            {
+              title: 'Footer Item',
+              link: '',
+            },
+            {
+              title: 'Footer Item',
+              link: '',
+            },
+            {
+              title: 'Footer Item',
+              link: '',
+            },
+          ],
         },
       ],
     }

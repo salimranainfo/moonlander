@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-[#0f1642] py-8 mt-32 md:mt-44 xl:mt-[12.5rem] xl:py-12">
+  <section class="bg-[#0f1642] py-8 mt-20 md:mt-24 xl:mt-[7rem] xl:py-12">
     <div class="lg:max-w-[55rem] xl:max-w-[66rem] mx-auto px-4 py-6">
       <h2 class="section-headline">Video Guides</h2>
 

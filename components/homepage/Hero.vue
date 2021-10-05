@@ -1,9 +1,9 @@
 <template>
   <section>
     <div class="lg:max-w-[55rem] xl:max-w-[66rem] mx-auto px-4">
-      <div class="space-y-6 md:space-y-0 md:flex justify-center items-center pt-12 md:space-x-6 xl:pt-16 2xl:pt-20">
-        <div class="md:w-3/12 h-32 bg-gray-600 flex justify-center items-center">
-          <p>image here</p>
+      <div class="space-y-6 md:space-y-0 md:flex justify-center items-center md:space-x-6 pt-6 xl:pt-16 2xl:pt-20">
+        <div class="md:w-3/12">
+          <img src="~/assets/images/mld-coin.png" alt="" />
         </div>
 
         <div class="md:w-9/12">
@@ -14,8 +14,8 @@
 
       <!-- box -->
       <div class="mt-16 lg:mt-[5.32rem] rounded-[.625rem] md:flex justify-between items-center md:space-x-6 relative" style="background: linear-gradient(90deg, rgba(1, 119, 184, 1) 0%, rgba(48, 152, 201, 1) 100%)">
-        <div class="md:w-4/12 m-2 h-28 bg-gray-600 flex justify-center items-center">
-          <p>image here</p>
+        <div class="md:w-4/12">
+          <img src="~/assets/images/rocket.png" alt="" />
         </div>
 
         <div class="md:w-8/12">
@@ -23,8 +23,8 @@
         </div>
 
         <!-- Corner Image -->
-        <div class="absolute bottom-0 right-0 bg-white h-16 w-16 rounded-full flex justify-center items-center transform translate-y-[70%] translate-x-[20%] lg:translate-y-[50%] lg:translate-x-[30%]">
-          <p class="text-black text-xs text-center">Image Here</p>
+        <div class="hidden absolute bottom-0 right-0 lg:block transform translate-x-[50%] translate-y-[50%]">
+          <img src="~assets/images/torus-bronze.png" alt="" class="h-28" />
         </div>
       </div>
     </div>

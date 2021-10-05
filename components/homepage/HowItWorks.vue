@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="lg:max-w-[55rem] xl:max-w-[66rem] mx-auto px-4 mt-32 md:mt-44 xl:mt-[12.5rem]">
+    <div class="section-width">
       <h2 class="section-headline">Moonlender Features</h2>
       <p class="section-para text-justify md:mt-2 md:w-10/12">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis</p>
 
@@ -17,8 +17,8 @@
         </div>
 
         <!-- Corner Image -->
-        <div class="hidden absolute -top-4 -right-4 bg-white h-16 w-16 rounded-full lg:flex justify-center items-center">
-          <p class="text-black text-xs text-center">Image</p>
+        <div class="hidden absolute top-0 right-0 lg:block transform translate-x-[40%] translate-y-[-40%] xl:translate-x-[45%]">
+          <img src="~assets/images/torus-purple.png" alt="" class="h-36 xl:h-40" />
         </div>
       </div>
     </div>

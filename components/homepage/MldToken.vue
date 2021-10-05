@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="lg:max-w-[55rem] xl:max-w-[66rem] mx-auto px-4 mt-32 md:mt-44 xl:mt-[12.5rem]">
+    <div class="section-width">
       <div class="md:flex justify-between items-center md:space-x-6 xl:space-x-20">
         <!-- Mld Token -->
         <div class="md:w-4/12 md:pr-5">
