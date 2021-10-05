@@ -27,8 +27,8 @@
 
             <tbody>
               <tr v-for="(data, i) in tableOneData" :key="i" class="px-6 bg-[#0f1642] border-t border-[#082851]">
-                <td v-for="(item, z) in data" :key="z" class="whitespace-nowrap px-4 py-3">
-                  <span>
+                <td v-for="(item, name, z) in data" :key="z" class="whitespace-nowrap px-4 py-3 w-full">
+                  <span class="w-full" :class="name === 'status' && (data.status === 'In Progress' ? 'in-progress' : data.status === 'Done' ? 'done' : 'upcoming')">
                     <!-- :class="item.status === 'In Progress' ? 'in-progress' : item.status === 'Done' ? 'done' : 'upcoming'" -->
                     {{ item }}
                   </span>
@@ -50,10 +50,7 @@
             <tbody>
               <tr v-for="(data, i) in tableTwoData" :key="i" class="px-6 bg-[#0f1642] border-t border-[#082851]">
                 <td v-for="(item, z) in data" :key="z" class="whitespace-nowrap px-4 py-3">
-                  <span>
-                    <!-- :class="item.status === 'In Progress' ? 'in-progress' : item.status === 'Done' ? 'done' : 'upcoming'" -->
-                    {{ item }}
-                  </span>
+                  {{ item }}
                 </td>
 
                 <!-- search -->
@@ -174,17 +171,17 @@ export default {
 }
 
 .in-progress {
-  @apply py-1 px-4 w-full rounded-md;
+  @apply py-1 px-4 w-full rounded-md text-center inline-block;
   background: linear-gradient(90deg, rgba(212, 0, 127, 1) 0%, rgba(237, 106, 166, 1) 100%);
 }
 
 .done {
-  @apply py-1 px-4 w-full rounded-md;
+  @apply py-1 px-4 w-full rounded-md text-center inline-block;
   background: linear-gradient(90deg, rgba(0, 145, 215, 1) 0%, rgba(62, 189, 239, 1) 100%);
 }
 
 .upcoming {
-  @apply py-1 px-4 w-full rounded-md bg-[#082851];
+  @apply py-1 px-4 w-full rounded-md bg-[#082851] text-center inline-block;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */

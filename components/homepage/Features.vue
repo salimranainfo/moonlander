@@ -20,18 +20,14 @@
       </div>
 
       <!-- box -->
-      <div class="mt-16 lg:mt-[5.32rem] rounded-[.625rem] flex justify-between items-center space-x-6 relative" style="background: linear-gradient(90deg, rgba(1, 119, 184, 1) 0%, rgba(48, 152, 201, 1) 100%)">
+      <div class="mt-16 lg:mt-[5.32rem] rounded-[.625rem] flex justify-start items-center space-x-6 relative" style="background: linear-gradient(90deg, rgba(1, 119, 184, 1) 0%, rgba(48, 152, 201, 1) 100%)">
         <div class="w-6/12 bg-opacity-60">
           <p class="text-lg leading-tight text-justify md:text-2xl md:leading-tight lg:text-3xl lg:leading-tight px-4 py-6 md:px-8 md:py-10 xl:px-12 xl:py-16">Another pretty block about the project feature</p>
         </div>
 
-        <div class="w-6/12 m-2 h-28 bg-gray-600 flex justify-center items-center">
-          <p>image here</p>
-        </div>
-
         <!-- Corner Image -->
-        <div class="hidden absolute bottom-4 -left-16 bg-white h-16 w-16 rounded-full lg:flex justify-center items-center">
-          <p class="text-black text-xs text-center">Image</p>
+        <div class="hidden absolute bottom-0 left-0 lg:block transform translate-x-[-110%] translate-y-[-20%]">
+          <img src="~assets/images/sphere-gold.png" alt="" class="h-16" />
         </div>
       </div>
     </div>

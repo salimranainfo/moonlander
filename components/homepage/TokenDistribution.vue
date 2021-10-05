@@ -46,7 +46,23 @@
 import Chart from 'chart.js/auto'
 
 export default {
+  data() {
+    return {
+      cutout: 100,
+    }
+  },
+
+  computed: {
+    windowWidth() {
+      return this.$store.state.windowWidth
+    },
+  },
+
   mounted() {
+    if (this.windowWidth < 640 && this.windowWidth > 1280) {
+      this.cutout = 70
+    }
+
     const ctx = document.getElementById('myChart')
     // eslint-disable-next-line no-new
     new Chart(ctx, {
@@ -61,7 +77,7 @@ export default {
             borderColor: ['#b933ff', '#43ff82', '#48b5ff', '#335fff', '#ff2caa'],
             borderWidth: 1,
             hoverBorderWidth: 16,
-            cutout: 100,
+            cutout: this.cutout,
             rotation: -90,
           },
         ],

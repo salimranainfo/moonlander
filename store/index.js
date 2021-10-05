@@ -7,6 +7,5 @@ export const state = () => {
 export const mutations = {
   SET_WINDOW_WIDTH(state, val) {
     state.windowWidth = val
-    console.log(state.windowWidth)
   },
 }

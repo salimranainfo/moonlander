@@ -5,31 +5,31 @@
         <div class="space-y-6 md:space-y-0 md:grid grid-cols-4 gap-x-6">
           <!-- Moonlender -->
           <div>
-            <h4 class="text-lg font-bold">Moonlender</h4>
-            <p class="text-sm leading-tight mt-2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi</p>
+            <h4 class="text-lg font-bold xl:text-xl">Moonlender</h4>
+            <p class="text-sm leading-tight mt-2 xl:text-base">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi</p>
           </div>
 
           <!-- Pages and Docs -->
           <div v-for="(item, i) in items" :key="i">
-            <h4 class="text-lg font-bold">{{ item.title }}</h4>
+            <h4 class="text-lg font-bold xl:text-xl">{{ item.title }}</h4>
             <div class="flex flex-col space-y-1 mt-2">
-              <nuxt-link v-for="(footerItem, z) in item.footerItems" :key="z" :to="footerItem.link" class="text-sm">{{ footerItem.title }}</nuxt-link>
+              <nuxt-link v-for="(footerItem, z) in item.footerItems" :key="z" :to="footerItem.link" class="text-sm xl:text-base">{{ footerItem.title }}</nuxt-link>
             </div>
           </div>
 
           <!-- Contact and investors -->
           <div class="flex flex-col justify-between">
             <div>
-              <h4 class="text-lg font-bold">Contact</h4>
+              <h4 class="text-lg font-bold xl:text-xl">Contact</h4>
               <div class="flex flex-col space-y-1 mt-2">
-                <nuxt-link to="" class="text-sm">Footer item</nuxt-link>
+                <nuxt-link to="" class="text-sm xl:text-base">Footer item</nuxt-link>
               </div>
             </div>
 
             <div>
-              <h4 class="text-lg font-bold">investors</h4>
+              <h4 class="text-lg font-bold xl:text-xl">investors</h4>
               <div class="flex flex-col space-y-1 mt-2">
-                <nuxt-link to="" class="text-sm">Footer item</nuxt-link>
+                <nuxt-link to="" class="text-sm xl:text-base">Footer item</nuxt-link>
               </div>
             </div>
           </div>

@@ -6,7 +6,7 @@
       <div class="mt-4 md:mt-6">
         <div class="grid grid-cols-3 gap-4 md:gap-x-8 lg:gap-x-12 lg:gap-y-6">
           <div v-for="(image, i) in images" :key="i">
-            <img :src="image" alt="" />
+            <img :src="image" alt="" class="w-[90%]" />
           </div>
         </div>
       </div>

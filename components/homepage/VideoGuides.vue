@@ -14,7 +14,7 @@
 
         <!-- video -->
         <div class="rounded-b-[.625rem] md:rounded-b-none md:rounded-r-[.625rem] overflow-hidden md:w-[70%]">
-          <iframe class="w-full h-48 md:h-full" :src="items[activeButtonIndex].link" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe class="w-full h-48 md:h-full" :src="items[activeButtonIndex].link" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
     </div>

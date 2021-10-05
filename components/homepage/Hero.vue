@@ -1,8 +1,8 @@
 <template>
   <section>
     <div class="lg:max-w-[55rem] xl:max-w-[66rem] mx-auto px-4">
-      <div class="space-y-6 md:space-y-0 md:flex justify-center items-center md:space-x-6 pt-6 xl:pt-16 2xl:pt-20">
-        <div class="md:w-3/12">
+      <div class="space-y-6 md:space-y-0 md:flex justify-center items-center md:space-x-6 pt-12 xl:pt-16 2xl:pt-20">
+        <div class="md:w-3/12 flex justify-center items-center">
           <img src="~/assets/images/mld-coin.png" alt="" />
         </div>
 
@@ -13,12 +13,14 @@
       </div>
 
       <!-- box -->
-      <div class="mt-16 lg:mt-[5.32rem] rounded-[.625rem] md:flex justify-between items-center md:space-x-6 relative" style="background: linear-gradient(90deg, rgba(1, 119, 184, 1) 0%, rgba(48, 152, 201, 1) 100%)">
-        <div class="md:w-4/12">
-          <img src="~/assets/images/rocket.png" alt="" />
+      <div class="mt-16 lg:mt-[5.32rem] rounded-[.625rem] md:flex justify-end items-stretch md:space-x-6 relative" style="background: linear-gradient(90deg, rgba(1, 119, 184, 1) 0%, rgba(48, 152, 201, 1) 100%)">
+        <div class="hidden md:w-3/12 overflow-hidden md:flex items-end">
+          <div class="w-full">
+            <img src="~/assets/images/rocket.png" alt="" class="transform translate-x-[-15%] translate-y-[20%] scale-125" />
+          </div>
         </div>
 
-        <div class="md:w-8/12">
+        <div class="md:w-9/12">
           <p class="text-lg leading-tight text-justify md:text-2xl md:leading-tight lg:text-3xl lg:leading-tight px-4 py-6 md:px-8 md:py-10 xl:px-12 xl:py-16">Invest in promising projects like real estate or tech with our automated secure crowdlending DAO and get a high yield.</p>
         </div>
 

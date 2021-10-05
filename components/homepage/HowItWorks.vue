@@ -1,10 +1,10 @@
 <template>
   <section>
     <div class="section-width">
-      <h2 class="section-headline">Moonlender Features</h2>
+      <h2 class="section-headline">How it works</h2>
       <p class="section-para text-justify md:mt-2 md:w-10/12">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis</p>
 
-      <div class="border-b-2 border-l-2 border-[#0c0f45] mt-6">
+      <div class="mt-6 border-l-2 border-b-2 border-[#04264e]">
         <img src="~/assets/images/how-it-works.png" alt="" />
       </div>
 
@@ -18,7 +18,7 @@
 
         <!-- Corner Image -->
         <div class="hidden absolute top-0 right-0 lg:block transform translate-x-[40%] translate-y-[-40%] xl:translate-x-[45%]">
-          <img src="~assets/images/torus-purple.png" alt="" class="h-36 xl:h-40" />
+          <img src="~assets/images/torus-purple.png" alt="" class="h-36 xl:h-28" />
         </div>
       </div>
     </div>
@@ -29,4 +29,4 @@
 export default {}
 </script>
 
-<style></style>
+<style scoped></style>
