@@ -1,6 +1,6 @@
 <template>
-  <section class="bg-[#0f1642]">
-    <div class="lg:max-w-[55rem] xl:max-w-[66rem] mx-auto px-4 pb-16 lg:pb-20">
+  <section class="bg-[#0f1642] relative">
+    <div class="lg:max-w-[55rem] xl:max-w-[66rem] mx-auto px-4 pb-16 lg:pb-20 z-[1] relative">
       <div class="pt-8 md:pt-10 lg:pt-16 xl:pt-24">
         <!-- title -->
         <div class="">
@@ -81,11 +81,26 @@
         </div>
       </div>
     </div>
+
+    <div class="hidden lg:block absolute bottom-0 right-16 2xl:right-64 z-[2] rellax" data-rellax-speed="1">
+      <img src="~/assets/images/torus-purple.png" alt="" class="w-16 h-16 2xl:h-40 2xl:w-40 transform rotate-12 translate-y-[20%]" />
+    </div>
+    <div class="hidden lg:block absolute bottom-0 transform translate-y-[-1%] lg:translate-y-[15%] 2xl:translate-y-[40%] right-4 z-0">
+      <img src="~/assets/images/torus-purple.png" alt="" class="w-28 h-28 2xl:h-80 2xl:w-80 filter blur-md transform -rotate-12" />
+    </div>
   </section>
 </template>
 
 <script>
-export default {}
+import Rellax from 'rellax'
+
+export default {
+  mounted() {
+    const rellax = new Rellax('.rellax')
+
+    console.log(rellax)
+  },
+}
 </script>
 
 <style scoped>

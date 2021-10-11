@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-[#040822] fixed top-0 w-full z-50">
+  <header class="fixed top-0 w-full z-50" :class="scrollY > 1 ? 'bg-[#0a1457] transition-all duration-200 ease-in-out' : 'bg-[#040822]'">
     <div class="px-4 py-4 lg:p-6 max-w-[85rem] mx-auto z-[1]">
       <div class="flex justify-between items-center">
         <!-- log -->
@@ -11,11 +11,19 @@
 
         <!-- desktop menu -->
         <nav class="hidden xl:flex justify-end items-center space-x-8">
-          <nuxt-link v-for="(item, i) in navItems" :key="i" :to="item.link" class="font-semibold">{{ item.title }}</nuxt-link>
+          <span v-for="(item, i) in navItems" :key="i" class="relative" :class="item.subMenu && 'mainMenu'">
+            <nuxt-link :to="item.link" class="font-semibold text-[#8480ac] hover:text-white custom-transition">{{ item.title }}</nuxt-link>
+
+            <span v-if="item.subMenu" class="absolute top-4 left-0 pt-4 subMenu">
+              <span class="bg-white rounded-xl py-4 px-6 flex flex-col justify-start items-center space-y-2">
+                <nuxt-link v-for="(subItem, z) in item.subMenu" :key="z" :to="subItem.link" class="font-semibold whitespace-nowrap w-full text-[#474747] hover:text-[#0e88c4] custom-transition">{{ subItem.title }}</nuxt-link>
+              </span>
+            </span>
+          </span>
 
           <div class="space-x-1">
-            <button class="whitespace-nowrap py-1 px-4 rounded-xl text-white font-semibold" style="background: linear-gradient(90deg, rgba(0, 145, 215, 1) 0%, rgba(62, 189, 239, 1) 100%)">Apply for Whitelist</button>
-            <button class="whitespace-nowrap py-1 px-4 rounded-xl text-white font-semibold" style="background: linear-gradient(90deg, rgba(212, 0, 127, 1) 0%, rgba(237, 106, 166, 1) 100%)">Join Telegram</button>
+            <button class="whitespace-nowrap py-1 px-4 rounded-xl text-white font-semibold gradient-bg">Apply for Whitelist</button>
+            <button class="whitespace-nowrap py-1 px-4 rounded-xl text-white font-semibold gradient-bg">Join Telegram</button>
           </div>
         </nav>
 
@@ -54,6 +62,7 @@
 export default {
   data() {
     return {
+      scrollY: 0,
       navItems: [
         {
           title: 'About',
@@ -74,6 +83,20 @@ export default {
         {
           title: 'Transparency',
           link: '',
+          subMenu: [
+            {
+              title: 'Whitepaper',
+              link: '',
+            },
+            {
+              title: 'Audit Security',
+              link: '',
+            },
+            {
+              title: 'Wallet transparency page',
+              link: '',
+            },
+          ],
         },
         {
           title: 'Community',
@@ -82,11 +105,26 @@ export default {
       ],
     }
   },
+
+  mounted() {
+    this.scrollY = window.scrollY
+
+    window.addEventListener('scroll', () => {
+      this.scrollY = window.scrollY
+    })
+  },
 }
 </script>
 
 <style scoped>
-.main-div:hover >>> div {
-  @apply block;
+.subMenu {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+}
+
+.mainMenu:hover >>> .subMenu {
+  visibility: visible;
+  opacity: 100;
 }
 </style>

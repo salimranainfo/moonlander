@@ -37,8 +37,15 @@ a {
 }
 
 .section-width {
-  /* @apply lg:max-w-[55rem] xl:max-w-[66rem] mx-auto px-4 mt-32 md:mt-44 xl:mt-[12.5rem]; */
   @apply lg:max-w-[55rem] xl:max-w-[66rem] mx-auto px-4 mt-20 md:mt-24 xl:mt-[7rem];
+}
+
+.gradient-bg {
+  background: linear-gradient(90deg, rgba(0, 145, 215, 1) 0%, rgba(62, 189, 239, 1) 100%);
+}
+
+.gradient-bg:hover {
+  background: -webkit-linear-gradient(90deg, rgba(212, 0, 127, 1) 0%, rgba(237, 106, 166, 1) 100%);
 }
 
 @tailwind components;

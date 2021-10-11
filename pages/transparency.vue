@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-16 lg:pt-20">
+  <div class="pt-16 lg:pt-20 overflow-hidden">
     <wallet-transparency></wallet-transparency>
     <transparency-details></transparency-details>
     <latest-updates></latest-updates>
