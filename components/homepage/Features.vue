@@ -1,20 +1,22 @@
 <template>
   <section>
     <div class="section-width">
-      <h2 class="section-headline">Moonlender Features</h2>
-
       <!-- features -->
-      <div class="mt-6 space-y-6 md:space-y-0 md:grid grid-cols-2 md:gap-8 md:mt-8 lg:gap-10 lg:mt-10 xl:gap-[3.125rem] xl:mt-[3.125rem]">
-        <div v-for="(item, i) in data" :key="i" class="flex justify-between items-start space-x-6">
+      <div class="mt-6 space-y-10 md:space-y-0 md:grid grid-cols-2 md:gap-8 md:mt-8 lg:gap-10 lg:mt-10 xl:gap-[3.125rem] xl:mt-[3.125rem]">
+        <div>
+          <h2 class="section-headline text-center md:text-left">Moonlender Features</h2>
+        </div>
+
+        <div v-for="(item, i) in data" :key="i" class="flex flex-col md:flex-row justify-start md:justify-between items-start space-y-4 md:space-y-0 md:space-x-6">
           <!-- icon -->
-          <div class="bg-[#052554] p-4 xl:p-8 rounded-[.625rem] w-4/12 flex justify-center items-center">
-            <img src="~/assets/images/feature.png" alt="" />
+          <div class="bg-[#052554] px-6 py-4 xl:p-6 rounded-[.625rem] flex justify-center items-center bg-opacity-40">
+            <img src="~/assets/images/feature.png" alt="" class="w-10 md:w-20 lg:w-24" />
           </div>
 
           <!-- text -->
-          <div class="w-8/12">
+          <div class="">
             <h3 class="text-xl font-semibold leading-none lg:text-2xl">{{ item.title }}</h3>
-            <p class="text-sm leading-tight mt-2 lg:text-base lg:leading-tight xl:text-lg xl:leading-tight">{{ item.details }}</p>
+            <p class="text-sm mt-2 lg:text-base xl:text-lg text-[#e6e7ea]">{{ item.details }}</p>
           </div>
         </div>
       </div>
@@ -57,6 +59,10 @@ export default {
         },
         {
           title: 'Feature 5',
+          details: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat',
+        },
+        {
+          title: 'Feature 6',
           details: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat',
         },
         {
